@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditatCurso">
+    <TextView
+        android:id="@+id/TvNombreCursro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:text="Nombre del Curso"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/EditarCurso_EtNCurso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TvNombreCursro" />
+
+    <TextView
+        android:id="@+id/TVDescripcionCurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="12dp"
+        android:text="Descripcion del Curso"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditarCurso_EtNCurso" />
+    <EditText
+        android:id="@+id/EditarCurso_EtDescripcionCurso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVDescripcionCurso" />
+
+    <TextView
+        android:id="@+id/TVFechaInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="12dp"
+        android:text="Duracion del curso"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditarCurso_EtDescripcionCurso" />
+    <EditText
+        android:id="@+id/EditarCurso_EtDuracionCurso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVFechaInicio" />
+
+    <TextView
+        android:id="@+id/TVHorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="12dp"
+        android:text="Horario"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditarCurso_EtDuracionCurso" />
+    <CheckBox
+        android:id="@+id/EditarCurso_CBLunes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/radio_off"
+        android:button="@color/light_gray"
+        android:onClick="onCheckboxClicked"
+        android:text="Lunes"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVHorario" />
+    <CheckBox
+        android:id="@+id/EditarCurso_CBmartes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radio_off"
+        android:button="@color/light_gray"
+        android:onClick="onCheckboxClicked"
+        android:text="Martes"
+
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@id/EditarCurso_CBLunes"
+        app:layout_constraintTop_toBottomOf="@+id/TVHorario" />
+    <CheckBox
+        android:id="@+id/EditarCurso_CBMiercoles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@color/light_gray"
+        android:onClick="onCheckboxClicked"
+        android:text="Miercoles"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@id/EditarCurso_CBmartes"
+        app:layout_constraintTop_toBottomOf="@+id/TVHorario" />
+    <CheckBox
+        android:id="@+id/EditarCurso_CBJueves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@color/light_gray"
+        android:onClick="onCheckboxClicked"
+        android:text="Jueves"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@id/EditarCurso_CBMiercoles"
+        app:layout_constraintTop_toBottomOf="@+id/TVHorario" />
+    <CheckBox
+        android:id="@+id/EditarCurso_CBViernes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@color/light_gray"
+        android:onClick="onCheckboxClicked"
+        android:text="Viernes"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@id/EditarCurso_CBJueves"
+        app:layout_constraintTop_toBottomOf="@+id/TVHorario" />
+    <!--    <CheckBox-->
+    <!--        android:id="@+id/CBSabado"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Sabado"-->
+    <!--        android:textAlignment="center"-->
+    <!--        app:layout_constraintLeft_toRightOf="@id/CBViernes"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/TVHorario" />-->
+    <TextView
+        android:id="@+id/TvResultDia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escoge un dia"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditarCurso_CBLunes" />
+    <TextView
+        android:id="@+id/TVHoraInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:text="Desde"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TvResultDia" />
+    <EditText
+        android:id="@+id/EditarCurso_EtHoraInicio"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVHoraInicio" />
+    <TextView
+        android:id="@+id/TVHoraFin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="224dp"
+        android:text="Hasta"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/EditarCurso_EtHoraFin"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <EditText
+        android:id="@+id/EditarCurso_EtHoraFin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintLeft_toRightOf="@id/EditarCurso_EtHoraInicio"
+        app:layout_constraintTop_toBottomOf="@+id/TVHoraInicio" />
+
+    <TextView
+        android:id="@+id/TVFechasParciales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="Escoge las tres fechas de los parciales"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditarCurso_EtHoraInicio" />
+    <EditText
+        android:id="@+id/EditarCurso_EtParcial1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="Primer parcial"
+        app:layout_constraintTop_toBottomOf="@+id/TVFechasParciales" />
+    <EditText
+        android:id="@+id/EditarCurso_EtParcial2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="Segundo parcial"
+        app:layout_constraintTop_toBottomOf="@+id/EditarCurso_EtParcial1" />
+    <EditText
+        android:id="@+id/EtParcial3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="Tercer parcial"
+        app:layout_constraintTop_toBottomOf="@+id/EditarCurso_EtParcial2" />
+
+    <Button
+        android:id="@+id/EditarCurso_btnAnadirCurso"
+        android:layout_width="177dp"
+        android:layout_height="44dp"
+        android:layout_margin="24dp"
+        android:layout_marginTop="28dp"
+        android:padding="8dp"
+        android:text="Añadir curso"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditarCurso_spDocente" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="332dp"
+        android:text="Docente"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtParcial3" />
+
+    <Spinner
+        android:id="@+id/EditarCurso_spDocente"
+        android:layout_width="353dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="29dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="175dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:text="Eliminar curso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/EditarCurso_btnAnadirCurso"
+        app:layout_constraintTop_toBottomOf="@+id/EditarCurso_spDocente" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

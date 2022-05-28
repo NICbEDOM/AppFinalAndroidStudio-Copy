@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+<<<<<<< HEAD
+        <entry key="..\:/Users/Acer/Documents/universidad/Decimo_semestre/Apps/Proyecto/Nueva carpeta/Clases_UAO/app/src/main/res/layout/activity_consultar_curso.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Acer/Documents/universidad/Decimo_semestre/Apps/Proyecto/Nueva carpeta/Clases_UAO/app/src/main/res/layout/activity_consultar_usuario.xml" value="0.2078804347826087" />
+        <entry key="..\:/Users/Acer/Documents/universidad/Decimo_semestre/Apps/Proyecto/Nueva carpeta/Clases_UAO/app/src/main/res/layout/activity_crear_curso.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Acer/Documents/universidad/Decimo_semestre/Apps/Proyecto/Nueva carpeta/Clases_UAO/app/src/main/res/layout/activity_crear_docente_admin.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Acer/Documents/universidad/Decimo_semestre/Apps/Proyecto/Nueva carpeta/Clases_UAO/app/src/main/res/layout/activity_gestion_admin.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Acer/Documents/universidad/Decimo_semestre/Apps/Proyecto/Nueva carpeta/Clases_UAO/app/src/main/res/layout/activity_gestion_cursos_admin.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Acer/Documents/universidad/Decimo_semestre/Apps/Proyecto/Nueva carpeta/Clases_UAO/app/src/main/res/layout/activity_gestion_docentes_admin.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Acer/Documents/universidad/Decimo_semestre/Apps/Proyecto/Nueva carpeta/Clases_UAO/app/src/main/res/layout/activity_iniciar_sesion.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Acer/Documents/universidad/Decimo_semestre/Apps/Proyecto/Nueva carpeta/Clases_UAO/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+=======
+        <entry key="..\:/Users/BHC/Desktop/PROYECTO_APP/Clases_UAO/app/src/main/res/layout/activity_crear_curso.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/BHC/Desktop/PROYECTO_APP/Clases_UAO/app/src/main/res/layout/activity_iniciar_sesion.xml" value="0.27447916666666666" />
+>>>>>>> becerra
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+<<<<<<< HEAD
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+=======
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+>>>>>>> becerra
+</project>

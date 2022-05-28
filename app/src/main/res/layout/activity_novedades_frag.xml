@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".novedades_frag">
+
+
+    <ListView
+        android:id="@+id/AsistentesEvento_tvEstu"
+        android:layout_width="393dp"
+        android:layout_height="612dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Estu_novedades_frag_btCrear" />
+
+    <Button
+        android:id="@+id/Estu_novedades_frag_btCrear"
+        android:layout_width="374dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:onClick="irACrearNovedad"
+        android:text="Crear Novedad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

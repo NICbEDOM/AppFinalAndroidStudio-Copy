@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.proyectoapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProyectoApp"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".EditatCurso"
+            android:exported="false" />
+        <activity
+            android:name=".AsignarEstudiantes"
+            android:exported="false" />
+        <activity
+            android:name=".AsistentesEvento"
+            android:exported="false" />
+        <activity
+            android:name=".Prueba"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC47JAVLqmbBXdC-r6qME02aieNp5H-zKw" />
+
+        <activity
+            android:name=".ScanEvento"
+            android:exported="false" />
+        <activity
+            android:name=".InfoEvento"
+            android:exported="false" />
+        <activity
+            android:name=".EscribirNovedad"
+            android:exported="false" />
+        <activity
+            android:name=".CursoInfo"
+            android:exported="false" />
+        <activity
+            android:name=".eventosDocente_frag"
+            android:exported="false" />
+        <activity
+            android:name=".novedades_frag"
+            android:exported="false" />
+        <activity
+            android:name=".EstudiantesCursos_Frag"
+            android:exported="false" />
+        <activity
+            android:name=".cursoHome"
+            android:exported="false" />
+        <activity
+            android:name=".MainUsers"
+            android:exported="false" />
+        <activity
+            android:name=".EditarUsuario"
+            android:exported="false"
+            android:parentActivityName=".Gestion_DocentesAdmin" />
+        <activity
+            android:name=".GestionEstudiantesAdmin"
+            android:exported="false"
+            android:parentActivityName=".gestion_admin" />
+        <activity
+            android:name=".ConsultarUsuario"
+            android:exported="false"
+            android:parentActivityName=".Gestion_DocentesAdmin" />
+        <activity
+            android:name=".crearDocenteAdmin"
+            android:exported="false"
+            android:parentActivityName=".Gestion_DocentesAdmin" />
+        <activity
+            android:name=".Gestion_DocentesAdmin"
+            android:exported="false"
+            android:parentActivityName=".gestion_admin" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".IniciarSesion"
+            android:exported="false" />
+        <activity
+            android:name=".modificarCurso"
+            android:exported="false" />
+        <activity
+            android:name=".consultarCurso"
+            android:exported="false"
+            android:parentActivityName=".gestion_cursosAdmin" />
+        <activity
+            android:name=".crearCurso"
+            android:exported="false"
+            android:parentActivityName=".gestion_cursosAdmin" />
+        <activity
+            android:name=".gestion_cursosAdmin"
+            android:exported="false"
+            android:parentActivityName=".gestion_admin" />
+        <activity
+            android:name=".gestion_admin"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CaptureActivityPortrait"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true" />
+    </application>
+
+</manifest>
